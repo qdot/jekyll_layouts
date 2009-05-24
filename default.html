@@ -1,0 +1,32 @@
+<HTML>
+  <HEAD>
+    <link rel="stylesheet" href="style.css" type="text/css" />   
+  </HEAD>
+  <BODY>
+    <div id="wrap">
+      <div id="main">
+	<div id="header"><h1>{{page.project}} - {{page.title}}</h1></div>
+	<div id="content">
+	  {{content}}
+	</div>
+      </div>
+      <div id="sidebar">
+	<div id="image">
+	  <div style="width:128px; height:128px; background:#000000">
+	  </div>
+	</div>
+	<div id="nav">
+	  <UL>
+	    <LI><A HREF='index.html'>index</A></LI>
+	    <LI><A HREF='about.html'>about</A></LI>
+	    <LI><A HREF='releases.html'>releases</A></LI>
+	    <LI><A HREF='http://docs.nonpolynomial.com/{{page.project}}'>documentation</A></LI>
+	    <LI><A HREF='projects.html'>projects</A></LI>
+	    <LI><A HREF='links.html'>links</A></LI>
+	  </UL>
+	</div>
+      </div>
+      <div id="footer">Last Updated {{site.time}} - Copyright 2009 <A HREF='http://www.nonpolynomial.com'>Nonpolynomial Labs/Kyle Machulis</A></div>
+    </div>
+  </BODY>
+</HTML>
