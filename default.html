@@ -46,9 +46,12 @@
 
       #sidebar {
       float:left;
-      width:125px;
-      padding-right:8px;
-      border-right:1px dotted #000;
+      width:105px;
+      }
+
+      #sidebar img {
+      float:right;
+      margin-bottom:5px;
       }
 
       #nav ul {
@@ -63,8 +66,8 @@
       padding:0;
       }
 
-      #image {
-      margin-bottom:5px;
+      #header {
+      border-bottom:1px dotted #000;
       }
 
       #header h1 {
@@ -74,10 +77,26 @@
       text-align: right;
       }
 
+      #content h1 {
+      font-family: Helvetica, Verdana, Arial, sans-serif;
+      font-size: large;
+      font-weight: normal;
+      text-align: right;
+      }
+
+      #about {
+      border-bottom:1px dotted #000;
+      }
+
+      #about p {
+      padding-left:20px;
+      }
+
       #main {
+      border-left:1px dotted #000;
       float:right;
-      width:610px;
-      padding-left:4px;
+      width:635px;
+      margin-left:5px;
       }
 
       #content {
@@ -92,23 +111,33 @@
 
       #post {
       }
+
       #post_title {
+      padding-left:5px;
       }
+
       #post_title h2 {
       font-family: Verdana, Arial, sans-serif;
       font-size: small;
       font-weight: normal;
       }
+
       #post_content {
       clear:both;
       padding-left:100px;
       align:right;
       }
+
       #title_right {
       float:right;
       }
+
       #title_left {
       float:left;
+      }
+
+      #documentation {
+      margin-left:5px;
       }
       }
     </style>
@@ -124,18 +153,14 @@
       </div>
       <div id="sidebar">
 	<div id="image">
-	  <div style="width:128px; height:128px; background:#000000">
-	    <IMG SRC='http://images.nonpolynomial.com/github/{{page.project}}.jpg' />
-	  </div>
+	    <IMG SRC='http://images.nonpolynomial.com/github/{{page.project}}.jpg' width=100 height=100/>
 	</div>
 	<div id="nav">
 	  <UL>
 	    <LI><A HREF='http://qdot.github.com/{{ page.project }}/index.html'>index</A></LI>
-	    <LI><A HREF='about.html'>about</A></LI>
 	    <LI><A HREF='releases.html'>releases</A></LI>
-	    <LI><A HREF='http://docs.nonpolynomial.com/{{ page.project }}'>documentation</A></LI>
-	    <LI><A HREF='projects.html'>projects</A></LI>
-	    <LI><A HREF='links.html'>links</A></LI>
+	    <LI><A HREF='http://qdot.github.com/{{ page.project }}/documentation.html'>documentation</A></LI>
+	    <LI><A HREF='links.html'>related links</A></LI>
 	  </UL>
 	</div>
       </div>
