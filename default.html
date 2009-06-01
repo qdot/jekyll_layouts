@@ -1,5 +1,6 @@
 <HTML>
   <HEAD>
+    <!-- Equal Height Column Hack - http://www.ejeliot.com/blog/61 -->
     <style type="text/css">
       BODY {
       background:#FFFFFF;
@@ -50,12 +51,18 @@
 
       #wrap {
       width:750px;
-      margin:0 auto;    
+      margin:0 auto;
+      overflow:hidden;
       }
 
       #sidebar {
       float:left;
       width:105px;
+      overflow: hidden;
+      border-right:1px dotted #000;
+      padding-right:5px;
+      margin-bottom: -5000px;
+      padding-bottom: 5000px;
       }
 
       #sidebar img {
@@ -102,10 +109,8 @@
       }
 
       #main {
-      border-left:1px dotted #000;
       float:right;
-      width:635px;
-      margin-left:5px;
+      width:639px;
       }
 
       #content {
@@ -117,6 +122,8 @@
       border-top:1px dotted #000;
       clear:both;
       padding-top: 3px;
+      width:750px;
+      margin:0 auto;
       }
 
       #post {
@@ -156,7 +163,9 @@
   <BODY>
     <div id="wrap">
       <div id="main">
-	<div id="header"><h1>{{page.project}} - {{page.title}}</h1></div>
+	<div id="header">
+	  <h1>{{page.project}} - {{page.title}}</h1>
+	</div>
 	<div id="content">
 	  {{content}}
 	</div>
@@ -177,10 +186,11 @@
 	  </UL>
 	</div>
       </div>
-      <div id="footer">
-	Last Updated {{site.time}} - Copyright 2009 <A HREF='http://www.nonpolynomial.com'>Nonpolynomial Labs/Kyle Machulis</A><br/>
-	Logo by <A HREF='http://www.counter-productive.com'>Counter-productive Productions</A>
-      </div>
     </div>
+    <div id="footer">
+      Last Updated {{site.time}} - Copyright 2009 <A HREF='http://www.nonpolynomial.com'>Nonpolynomial Labs/Kyle Machulis</A><br/>
+      Logo by <A HREF='http://www.counter-productive.com'>Counter-productive Productions</A>
+    </div>
+
   </BODY>
 </HTML>
